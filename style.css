@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #130d0a;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+}
+
+#hero {
+  height: 260px;
+  overflow: hidden;
+  position: relative;
+  object-fit: fill;
+}
+
+#content {
+  background-color: #ffffee;
+}
+
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 260px;
+  position: fixed;
+  z-index: -1;
+  /* border-bottom: 200px #130d0a; */
+}
+
+#hero-mobile {
+  display: none;
+  background: url("./cmd.png") no-repeat center bottom/cover;
+  height: 320px;
+}
+
+.first-section {
+  padding: 50px 0 20px 0;
+}
+
+.text-header {
+  font-size: 50px;
+  text-align: center;
+}
+
+h1 {
+  line-height: 120%;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+p {
+  color: #130d0a;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+#hero,
+.layer {
+  min-height: 260px;
+}
+
+.layer-bg {
+  /* background-image: url("./CMD DESK-4.png"); */
+  background-color: #ffe88a;
+  border-bottom-width: 3px;
+  border-color: #130d0a;
+}
+
+.layer-1 {
+  background-image: url("./CMD DESK-3.png");
+  background-position: left top;
+}
+
+.layer-2 {
+  background-image: url("./CMD DESK-2.png");
+  background-position: right top;
+}
+
+.layer-3 {
+  background-image: url("./CMD DESK-1.png");
+  background-position: left bottom;
+}
+
+.layer-4 {
+  background-position: center bottom;
+  /* background-image: url("./bottom.png"); */
+}
+
+.layer-overlay {
+  background-image: url("CMD DESK.png");
+  background-position: right center;
+}
+
+@media only screen and (max-width: 38px) {
+  #hero {
+    display: none;
+  }
+
+  #hero-mobile {
+    display: block;
+  }
+}
+/* .tutorial-link {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.tutorial-link:hover {
+  color: #ede0d5;
+} */
